@@ -1,0 +1,35 @@
+.control-button{
+    display: flex;
+    justify-content: center;
+}
+
+.back, .play, .next{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.back svg, .play svg , .next svg{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.back svg, .play svg , .next svg{
+    fill: rgb(255, 255, 255, 0.5);
+}
+
+.back :hover{
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.play :hover{
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.next :hover{
+    background-color: rgb(255, 255, 255, 0.2);
+}

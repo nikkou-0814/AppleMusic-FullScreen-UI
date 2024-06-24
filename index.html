@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleMusic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="control.css">
+</head>
+<body>
+    <canvas id="gradient-canvas"></canvas>
+
+    <div class="background"></div>
+
+    <div class="content">
+        <div class="left-column">
+            <div class="album-art">
+                <img src="tokuly.jpeg" id="albumArt">
+            </div>
+            <br><br>
+            <div class="song-info">
+                <h2 id="songTitle">君が笑って仕舞えば</h2>
+                <p id="artistName">957 — 君が笑って仕舞えば - Single</p>
+            </div>
+            <div class="player-controls">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="time current">0:00</span>
+                <span class="time total">3:59</span>
+                <div class="control-button">
+                    <div class="back">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z"/></svg>
+                    </div>
+                    <div class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="lyrics" id="mydiv">
+                <div style="padding: 100px;"></div>
+                <div class="lyric"> </div>
+                <div class="lyric">
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="lyric">瞼の裏で観てる 世界で生きれたら</div>
+                <div class="lyric">寂しさなんかは 感じないかな</div>
+                <div class="lyric">君と生きれるかな</div>
+                <div class="lyric">いつかその胸の惑星とぶつかったこと</div>
+                <div class="lyric">ちゃんと理由が有るでしょう？</div>
+                <div class="lyric">君が笑って仕舞えば</div>
+                <div class="lyric">私は何処へゆくんだろう</div>
+                <div class="lyric">必要が無くなっちゃえば</div>
+                <div class="lyric">君も離れるんでしょう</div>
+                <div class="lyric">誰にも見せないこの心も</div>
+                <div class="lyric">月だけは観てる</div>
+                <div class="lyric">瞼の裏で観てる 世界で生きてたら</div>
+                <div class="lyric">痛んだその君の胸から</div>
+                <div class="lyric">ゆっくりと解けて離れるの</div>
+                <div class="lyric">きっとちゃんと忘れてゆくの</div>
+                <div class="lyric">君の影だけ伸びてゆく</div>
+                <div class="lyric">私は消えれず浮かんでる</div>
+                <div class="lyric">記憶のなか独り散歩しながら</div>
+                <div class="lyric">思い出だけ抱き寄せてる</div>
+                <div class="lyric">君が笑って仕舞えば</div>
+                <div class="lyric">私は何処へゆくんだろう</div>
+                <div class="lyric">必要が無くなっちゃえば</div>
+                <div class="lyric">一人で歩いて征くんでしょう</div>
+                <div class="lyric">誰にも見せないこの心は</div>
+                <div class="lyric">君だけ想っている</div>
+                <div class="lyric">君が笑って仕舞えば</div>
+                <div class="lyric">君が笑って仕舞えば</div>
+                <div class="lyric">誰にも見せないこの心は</div>
+                <div class="lyric">最期までずっと</div>
+                <div class="lyric">私だけのものだ</div>
+                <div style="padding-bottom: 650px;"></div>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="background.js"></script>
+    <script src="lyrics.js"></script>
+</body>
+</html>
